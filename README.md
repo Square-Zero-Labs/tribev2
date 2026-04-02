@@ -12,6 +12,17 @@
 
 </div>
 
+## Fork Notes
+
+This repository is a fork of Meta's `facebookresearch/tribev2`.
+
+In addition to the original TRIBE v2 code and demo notebook, this fork adds a thumbnail-analysis workflow for comparing YouTube thumbnails by turning them into short silent clips, running TRIBE inference, and exporting comparison plots and summary metrics.
+
+- Original demo notebook: [Open in Colab](https://colab.research.google.com/github/facebookresearch/tribev2/blob/main/tribe_demo.ipynb)
+- Thumbnail analysis notebook: [Open in Colab](https://colab.research.google.com/github/Square-Zero-Labs/tribev2/blob/main/tribe_thumbnail_study.ipynb)
+
+## TRIBE v2
+
 TRIBE v2 is a deep multimodal brain encoding model that predicts fMRI brain responses to naturalistic stimuli (video, audio, text). It combines state-of-the-art text, audio and video models into a unified Transformer architecture that maps multimodal representations onto the cortical surface.
 
 ## Quick start
@@ -38,16 +49,19 @@ For a full walkthrough with brain visualizations, see the [Colab demo notebook](
 ## Installation
 
 **Basic** (inference only):
+
 ```bash
 pip install -e .
 ```
 
 **With brain visualization**:
+
 ```bash
 pip install -e ".[plotting]"
 ```
 
 **With training dependencies** (PyTorch Lightning, W&B, etc.):
+
 ```bash
 pip install -e ".[training]"
 ```
@@ -63,15 +77,16 @@ export DATAPATH="/path/to/studies"
 export SAVEPATH="/path/to/output"
 ```
 
-
 ### 2. Run training
 
 **Local test run:**
+
 ```bash
 python -m tribev2.grids.test_run
 ```
 
 **Grid search on Slurm:**
+
 ```bash
 python -m tribev2.grids.run_cortical
 python -m tribev2.grids.run_subcortical
