@@ -4,7 +4,7 @@
 
 **A Foundation Model of Vision, Audition, and Language for In-Silico Neuroscience**
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/facebookresearch/tribev2/blob/main/tribe_demo.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Square-Zero-Labs/tribev2/blob/main/tribe_demo.ipynb)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/downloads/)
 
@@ -18,8 +18,11 @@ This repository is a fork of Meta's `facebookresearch/tribev2`.
 
 In addition to the original TRIBE v2 code and demo notebook, this fork adds a thumbnail-analysis workflow for comparing YouTube thumbnails by turning them into short silent clips, running TRIBE inference, and exporting comparison plots and summary metrics.
 
-- Original demo notebook: [Open in Colab](https://colab.research.google.com/github/facebookresearch/tribev2/blob/main/tribe_demo.ipynb)
+- Original demo notebook: [Open in Colab](https://colab.research.google.com/github/Square-Zero-Labs/tribev2/blob/main/tribe_demo.ipynb)
 - Thumbnail analysis notebook: [Open in Colab](https://colab.research.google.com/github/Square-Zero-Labs/tribev2/blob/main/tribe_thumbnail_study.ipynb)
+
+For either Colab notebook, run the install cell once, restart the session, and
+continue below that cell.
 
 ## TRIBE v2
 
@@ -44,7 +47,7 @@ They are offset by 5 seconds in the past, in order to compensate for the hemodyn
 
 You can also pass `text_path` or `audio_path` to `model.get_events_dataframe` — text is automatically converted to speech and transcribed to obtain word-level timings.
 
-For a full walkthrough with brain visualizations, see the [Colab demo notebook](https://colab.research.google.com/github/facebookresearch/tribev2/blob/main/tribe_demo.ipynb).
+For a full walkthrough with brain visualizations, see the [Colab demo notebook](https://colab.research.google.com/github/Square-Zero-Labs/tribev2/blob/main/tribe_demo.ipynb).
 
 ## Installation
 

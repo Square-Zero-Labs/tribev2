@@ -13,6 +13,7 @@ authors = [{name = "Meta Platforms, Inc."}]
 
 dependencies = [
   "neuralset==0.0.2",
+  "exca==0.5.20",  # neuralset 0.0.2 requires exca.steps.base.NoValue
   "neuraltrain==0.0.2",
   "torch>=2.5.1,<2.7",
   "numpy==2.2.6",
