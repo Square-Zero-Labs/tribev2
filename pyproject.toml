@@ -16,6 +16,7 @@ dependencies = [
   "exca==0.5.20",  # neuralset 0.0.2 requires exca.steps.base.NoValue
   "neuraltrain==0.0.2",
   "torch>=2.5.1,<2.7",
+  "torchaudio>=2.5.1,<2.7",
   "numpy==2.2.6",
   "torchvision>=0.20,<0.22",
   "x_transformers==1.27.20",

@@ -31,6 +31,10 @@ class NotebookSetupTests(unittest.TestCase):
                 run.assert_called_once()
                 command = run.call_args.args[0]
                 self.assertEqual(command[:3], [sys.executable, "-m", "pip"])
+                self.assertIn("torch==2.6.0", command)
+                self.assertIn("torchvision==0.21.0", command)
+                self.assertIn("torchaudio==2.6.0", command)
+                self.assertIn("transformers==5.17.0", command)
                 self.assertIn("numpy==2.2.6", command)
                 self.assertIn("scipy==1.15.3", command)
                 self.assertIn("exca==0.5.20", command)
