@@ -34,6 +34,7 @@ class NotebookSetupTests(unittest.TestCase):
                 self.assertIn("numpy==2.2.6", command)
                 self.assertIn("scipy==1.15.3", command)
                 self.assertIn("exca==0.5.20", command)
+                self.assertIn("pyvista==0.46.5", command)
                 self.assertTrue(run.call_args.kwargs["check"])
                 self.assertFalse(any("force-reinstall" in arg for arg in command))
                 with self.assertRaisesRegex(RuntimeError, "Restart session"):
